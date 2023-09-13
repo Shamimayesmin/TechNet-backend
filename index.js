@@ -45,7 +45,7 @@ const run = async () => {
       const id = req.params.id;
 
       const result = await productCollection.findOne({ _id: new ObjectId(id) });
-      console.log(result);
+      // console.log(result);
       res.send(result);
     });
 
